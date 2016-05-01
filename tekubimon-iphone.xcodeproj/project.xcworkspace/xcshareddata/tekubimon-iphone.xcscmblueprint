@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E6B9D573CB13A12287535B4D77E42753D762A767",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E6B9D573CB13A12287535B4D77E42753D762A767" : 0,
+    "D0845298765868A59787D1CC0B47884E2F615F7B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F64D38EC-13FE-4A1A-B691-7CF671BF136B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E6B9D573CB13A12287535B4D77E42753D762A767" : "tekubimon-iphone\/",
+    "D0845298765868A59787D1CC0B47884E2F615F7B" : "tekubimon-iphone\/tekubimon-iphone\/tekubimon\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tekubimon-iphone",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "tekubimon-iphone.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jcheng9394\/tekubimon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D0845298765868A59787D1CC0B47884E2F615F7B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jcheng9394\/tekubimon-iphone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E6B9D573CB13A12287535B4D77E42753D762A767"
+    }
+  ]
+}
