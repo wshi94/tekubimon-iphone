@@ -16,6 +16,8 @@
 		BE7A3D5E1CD6B33A00D163FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7A3D5C1CD6B33A00D163FC /* LaunchScreen.storyboard */; };
 		BE7A3D691CD6B33B00D163FC /* tekubimon_iphoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D681CD6B33B00D163FC /* tekubimon_iphoneTests.swift */; };
 		BE7A3D741CD6B33B00D163FC /* tekubimon_iphoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D731CD6B33B00D163FC /* tekubimon_iphoneUITests.swift */; };
+		BE7A3D831CD6B4B100D163FC /* notes in Resources */ = {isa = PBXBuildFile; fileRef = BE7A3D811CD6B4B100D163FC /* notes */; };
+		BE7A3D841CD6B4B100D163FC /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D821CD6B4B100D163FC /* Pet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		BE7A3D6F1CD6B33B00D163FC /* tekubimon-iphoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tekubimon-iphoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7A3D731CD6B33B00D163FC /* tekubimon_iphoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tekubimon_iphoneUITests.swift; sourceTree = "<group>"; };
 		BE7A3D751CD6B33B00D163FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE7A3D811CD6B4B100D163FC /* notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
+		BE7A3D821CD6B4B100D163FC /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		BE7A3D4E1CD6B33A00D163FC /* tekubimon-iphone */ = {
 			isa = PBXGroup;
 			children = (
+				BE7A3D811CD6B4B100D163FC /* notes */,
+				BE7A3D821CD6B4B100D163FC /* Pet.swift */,
 				BE7A3D4F1CD6B33A00D163FC /* AppDelegate.swift */,
 				BE7A3D511CD6B33A00D163FC /* GameScene.sks */,
 				BE7A3D531CD6B33A00D163FC /* GameScene.swift */,
@@ -237,6 +243,7 @@
 			files = (
 				BE7A3D521CD6B33A00D163FC /* GameScene.sks in Resources */,
 				BE7A3D5E1CD6B33A00D163FC /* LaunchScreen.storyboard in Resources */,
+				BE7A3D831CD6B4B100D163FC /* notes in Resources */,
 				BE7A3D5B1CD6B33A00D163FC /* Assets.xcassets in Resources */,
 				BE7A3D591CD6B33A00D163FC /* Main.storyboard in Resources */,
 			);
@@ -264,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE7A3D541CD6B33A00D163FC /* GameScene.swift in Sources */,
+				BE7A3D841CD6B4B100D163FC /* Pet.swift in Sources */,
 				BE7A3D561CD6B33A00D163FC /* GameViewController.swift in Sources */,
 				BE7A3D501CD6B33A00D163FC /* AppDelegate.swift in Sources */,
 			);
