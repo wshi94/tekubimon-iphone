@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tekubimon_iphone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="tekubimon_iphone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -169,17 +169,6 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="attack" destination="Xwd-Js-OcV" id="ywt-cu-ngS"/>
-                        <outlet property="defense" destination="eEA-p1-mae" id="LHT-ed-Amt"/>
-                        <outlet property="happiness" destination="Fff-bl-FQI" id="v8l-pe-NBv"/>
-                        <outlet property="health" destination="pds-A5-2NF" id="Shr-aL-2sX"/>
-                        <outlet property="level" destination="WaS-Nu-Nfo" id="gOa-Tp-brV"/>
-                        <outlet property="missingSteps" destination="1Ko-H3-IYx" id="w38-rQ-5p0"/>
-                        <outlet property="petName" destination="Ltp-I7-VK1" id="ICG-Ky-d8Q"/>
-                        <outlet property="skillPoints" destination="UQb-uO-Je2" id="pAd-SH-gAr"/>
-                        <outlet property="speed" destination="sCq-LO-oEB" id="Iyj-yj-B5H"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
