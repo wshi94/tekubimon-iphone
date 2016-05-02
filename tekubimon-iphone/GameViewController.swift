@@ -14,7 +14,7 @@ class GameViewController: UIViewController {
     var bmArray:[UIImage] = []
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet var mainView: SKView!
+    //@IBOutlet var mainView: SKView!
     
     /*let healthManager: HealthKitManager = HealthKitManager()
     
