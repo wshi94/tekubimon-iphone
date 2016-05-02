@@ -14,6 +14,7 @@ class GameViewController: UIViewController {
     var bmArray:[UIImage] = []
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var mainView: SKView!
     
     /*let healthManager: HealthKitManager = HealthKitManager()
     
@@ -32,6 +33,18 @@ class GameViewController: UIViewController {
             }
         }
     }*/
+    
+    func animate(){
+        for index in 0...1{
+            let strImageName : String = "black_mage_\(index).png"
+            let image  = UIImage(named:strImageName)
+            bmArray.append(image!)
+        }
+        
+        self.imageView.animationImages = bmArray
+        self.imageView.animationDuration = 1.0
+        self.imageView.startAnimating()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +65,9 @@ class GameViewController: UIViewController {
             
             skView.presentScene(scene)
         }
+        //self.mainView.backgroundColor = [UIColor ]
         
-        self.imageView.animationImages = bmArray
+        animate()
         
         
     }

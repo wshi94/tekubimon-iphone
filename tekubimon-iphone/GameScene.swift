@@ -20,6 +20,8 @@ class GameScene: SKScene {
         
         //self.addChild(myLabel)
         
+        self.backgroundColor = SKColor.blackColor()
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

@@ -171,6 +171,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="imageView" destination="O8z-Tw-jwO" id="Hsz-ab-fnG"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="fY9-Pn-37X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
