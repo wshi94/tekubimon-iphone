@@ -1,6 +1,6 @@
 Notes:
 
-The sprite stuff might be a bit difficult, perhaps remake the project as a Game instead (which probably makes more sense).
+DONE - The sprite stuff might be a bit difficult, perhaps remake the project as a Game instead (which probably makes more sense).
 
 The Pet class is technically incomplete but one can initialize a Pet and have its stats set and everything already. Just need to figure out what other functionality we want to add to the Pet class.
 
@@ -12,3 +12,5 @@ TODO:
     Implement battle system
 
     Find out what we want to do for the evolutions and whether we still want them
+
+    Generalize the animate function in GameViewController such that you can pass in the array of images

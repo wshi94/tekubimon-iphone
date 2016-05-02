@@ -10,9 +10,49 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController {
+    
+    var bmArray:[UIImage] = []
 
+    @IBOutlet weak var imageView: UIImageView!
+    //@IBOutlet var mainView: SKView!
+    
+    /*let healthManager: HealthKitManager = HealthKitManager()
+    
+    func authorizeHealthKit()
+    {
+        healthManager.authorizeHealthKit { (authorized,  error) -> Void in
+            if authorized {
+                print("HealthKit authorization received.")
+            }
+            else
+            {
+                print("HealthKit authorization denied!")
+                if error != nil {
+                    print("\(error)")
+                }
+            }
+        }
+    }*/
+    
+    func animate(){
+        for index in 0...1{
+            let strImageName : String = "black_mage_\(index).png"
+            let image  = UIImage(named:strImageName)
+            bmArray.append(image!)
+        }
+        
+        self.imageView.layer.magnificationFilter = kCAFilterNearest
+        self.imageView.layer.minificationFilter = kCAFilterNearest
+        
+        self.imageView.animationImages = bmArray
+        self.imageView.animationDuration = 1.0
+        self.imageView.startAnimating()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //authorizeHealthKit()
 
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
@@ -28,6 +68,11 @@ class GameViewController: UIViewController {
             
             skView.presentScene(scene)
         }
+        //self.mainView.backgroundColor = [UIColor ]
+        
+        animate()
+        
+        
     }
 
     override func shouldAutorotate() -> Bool {

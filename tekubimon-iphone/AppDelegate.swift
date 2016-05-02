@@ -12,10 +12,34 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let healthManager: HealthKitManager = HealthKitManager()
+    
+    func authorizeHealthKit()
+    {
+        healthManager.authorizeHealthKit { (authorized,  error) -> Void in
+            if authorized {
+                print("HealthKit authorization received.")
+            }
+            else
+            {
+                print("HealthKit authorization denied!")
+                if error != nil {
+                    print("\(error)")
+                }
+            }
+        }
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        authorizeHealthKit()
+        //healthManager.getSteps()
+        healthManager.test(){ steps, error in
+            print(steps)
+        }
+        print(healthManager.steps)
+        //hkm.authorizeHealthKit(<#T##completion: ((success: Bool, error: NSError!) -> Void)!##((success: Bool, error: NSError!) -> Void)!##(success: Bool, error: NSError!) -> Void#>)
         return true
     }
 
