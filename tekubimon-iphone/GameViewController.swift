@@ -41,6 +41,9 @@ class GameViewController: UIViewController {
             bmArray.append(image!)
         }
         
+        self.imageView.layer.magnificationFilter = kCAFilterNearest
+        self.imageView.layer.minificationFilter = kCAFilterNearest
+        
         self.imageView.animationImages = bmArray
         self.imageView.animationDuration = 1.0
         self.imageView.startAnimating()
