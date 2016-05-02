@@ -34,6 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         authorizeHealthKit()
+        //healthManager.getSteps()
+        healthManager.test(){ steps, error in
+            print(steps)
+        }
+        print(healthManager.steps)
         //hkm.authorizeHealthKit(<#T##completion: ((success: Bool, error: NSError!) -> Void)!##((success: Bool, error: NSError!) -> Void)!##(success: Bool, error: NSError!) -> Void#>)
         return true
     }
