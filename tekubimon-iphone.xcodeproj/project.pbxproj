@@ -20,6 +20,7 @@
 		BE7A3D741CD6B33B00D163FC /* tekubimon_iphoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D731CD6B33B00D163FC /* tekubimon_iphoneUITests.swift */; };
 		BE7A3D831CD6B4B100D163FC /* notes in Resources */ = {isa = PBXBuildFile; fileRef = BE7A3D811CD6B4B100D163FC /* notes */; };
 		BE7A3D841CD6B4B100D163FC /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D821CD6B4B100D163FC /* Pet.swift */; };
+		BE7A3D861CD6E2B500D163FC /* Black_Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		BE7A3D751CD6B33B00D163FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7A3D811CD6B4B100D163FC /* notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
 		BE7A3D821CD6B4B100D163FC /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Black_Mage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				BE7A3D4F1CD6B33A00D163FC /* AppDelegate.swift */,
 				BE7A3D511CD6B33A00D163FC /* GameScene.sks */,
 				BE7A3D531CD6B33A00D163FC /* GameScene.swift */,
+				BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */,
 				BE7A3D551CD6B33A00D163FC /* GameViewController.swift */,
 				BE7A3D571CD6B33A00D163FC /* Main.storyboard */,
 				BE7A3D5A1CD6B33A00D163FC /* Assets.xcassets */,
@@ -214,7 +217,7 @@
 				TargetAttributes = {
 					BE7A3D4B1CD6B33A00D163FC = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = CB35MM53X3;
+						DevelopmentTeam = 2P6M4E83T6;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE7A3D541CD6B33A00D163FC /* GameScene.swift in Sources */,
+				BE7A3D861CD6E2B500D163FC /* Black_Mage.swift in Sources */,
 				BE7A3D841CD6B4B100D163FC /* Pet.swift in Sources */,
 				BE7A3D561CD6B33A00D163FC /* GameViewController.swift in Sources */,
 				8B70DAE91CD6B77700988E7E /* HealthKitManager.swift in Sources */,
@@ -432,10 +436,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "tekubimon-iphone/tekubimon-iphone.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "tekubimon-iphone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "nyu.edu.tekubimon-iphone";
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu.tekubimoniphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -444,10 +451,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "tekubimon-iphone/tekubimon-iphone.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "tekubimon-iphone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "nyu.edu.tekubimon-iphone";
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu.tekubimoniphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

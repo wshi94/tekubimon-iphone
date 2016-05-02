@@ -10,9 +10,33 @@ import UIKit
 import SpriteKit
 
 class GameViewController: UIViewController {
+    
+    var bmArray:[UIImage] = []
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    /*let healthManager: HealthKitManager = HealthKitManager()
+    
+    func authorizeHealthKit()
+    {
+        healthManager.authorizeHealthKit { (authorized,  error) -> Void in
+            if authorized {
+                print("HealthKit authorization received.")
+            }
+            else
+            {
+                print("HealthKit authorization denied!")
+                if error != nil {
+                    print("\(error)")
+                }
+            }
+        }
+    }*/
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //authorizeHealthKit()
 
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
@@ -28,6 +52,10 @@ class GameViewController: UIViewController {
             
             skView.presentScene(scene)
         }
+        
+        self.imageView.animationImages = bmArray
+        
+        
     }
 
     override func shouldAutorotate() -> Bool {
