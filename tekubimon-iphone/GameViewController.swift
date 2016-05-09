@@ -8,12 +8,22 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     
     var bmArray:[UIImage] = []
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var PetName: UILabel!
+    @IBOutlet var Atk: UILabel!
+    @IBOutlet var Def: UILabel!
+    @IBOutlet var Hit: UILabel!
+    @IBOutlet var Spd: UILabel!
+    @IBOutlet var Hpy: UILabel!
+    @IBOutlet var Lvl: UILabel!
+    @IBOutlet var Pnt: UILabel!
+    @IBOutlet var Steps: UILabel!
     //@IBOutlet var mainView: SKView!
     
     /*let healthManager: HealthKitManager = HealthKitManager()
@@ -34,6 +44,7 @@ class GameViewController: UIViewController {
         }
     }*/
     
+    
     func animate(){
         for index in 0...1{
             let strImageName : String = "black_mage_\(index).png"
@@ -49,8 +60,31 @@ class GameViewController: UIViewController {
         self.imageView.startAnimating()
     }
     
+    func loadPet(){
+        let thePet = PetEnviroment()
+        self.PetName.text = thePet.activePet.name
+        self.Atk.text = String(thePet.activePet.attack)
+        self.Def.text = String(thePet.activePet.defense)
+        self.Hit.text = String(thePet.activePet.health)
+        self.Spd.text = String(thePet.activePet.speed)
+        self.Hpy.text = String(thePet.activePet.happiness)
+        self.Lvl.text = String(thePet.activePet.level)
+        self.Pnt.text = String(thePet.activePet.points)
+        self.Steps.text = String(thePet.stepsTillBattle) + "Steps"
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //let musicPath = NSBundle.mainBundle().URLForResource("loop_sound", withExtension: "wav")
+
+        //do{
+            //audioPlayer = try AVAudioPlayer(contentsOfURL: musicPath!)
+        //}
+        //catch{
+            //fatalError("Error loading \(musicPath)")
+        //}
         
         //authorizeHealthKit()
 
@@ -71,6 +105,28 @@ class GameViewController: UIViewController {
         //self.mainView.backgroundColor = [UIColor ]
         
         animate()
+
+        
+        loadPet()
+        
+        print("Play music")
+        
+        
+        //do {
+        //    audioPlayer = try AVAudioPlayer(contentsOfURL: musicPath!)
+        //}
+        //catch {
+        //    fatalError("Error loading \(musicPath)")
+        //}
+        
+        //audioPlayer.prepareToPlay()
+        //audioPlayer.currentTime = 28
+        
+        //Play background music
+        //audioPlayer.play()
+        
+        //Loop Forever
+        //audioPlayer.numberOfLoops = -1
         
         
     }

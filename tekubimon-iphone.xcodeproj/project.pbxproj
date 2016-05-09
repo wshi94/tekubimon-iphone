@@ -21,6 +21,10 @@
 		BE7A3D831CD6B4B100D163FC /* notes in Resources */ = {isa = PBXBuildFile; fileRef = BE7A3D811CD6B4B100D163FC /* notes */; };
 		BE7A3D841CD6B4B100D163FC /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D821CD6B4B100D163FC /* Pet.swift */; };
 		BE7A3D861CD6E2B500D163FC /* Black_Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */; };
+		BEC0B1981CE021DC0031EE8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC0B1941CE021DC0031EE8A /* Assets.xcassets */; };
+		BEC0B1991CE021DC0031EE8A /* loop_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = BEC0B1951CE021DC0031EE8A /* loop_sound.wav */; };
+		BEC0B19A1CE021DC0031EE8A /* PetEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC0B1961CE021DC0031EE8A /* PetEnviroment.swift */; };
+		BEC0B19B1CE021DC0031EE8A /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC0B1971CE021DC0031EE8A /* StatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		BE7A3D811CD6B4B100D163FC /* notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
 		BE7A3D821CD6B4B100D163FC /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Black_Mage.swift; sourceTree = "<group>"; };
+		BEC0B1941CE021DC0031EE8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEC0B1951CE021DC0031EE8A /* loop_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loop_sound.wav; sourceTree = "<group>"; };
+		BEC0B1961CE021DC0031EE8A /* PetEnviroment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetEnviroment.swift; sourceTree = "<group>"; };
+		BEC0B1971CE021DC0031EE8A /* StatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,10 @@
 				BE7A3D511CD6B33A00D163FC /* GameScene.sks */,
 				BE7A3D531CD6B33A00D163FC /* GameScene.swift */,
 				BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */,
+				BEC0B1941CE021DC0031EE8A /* Assets.xcassets */,
+				BEC0B1951CE021DC0031EE8A /* loop_sound.wav */,
+				BEC0B1961CE021DC0031EE8A /* PetEnviroment.swift */,
+				BEC0B1971CE021DC0031EE8A /* StatViewController.swift */,
 				BE7A3D551CD6B33A00D163FC /* GameViewController.swift */,
 				BE7A3D571CD6B33A00D163FC /* Main.storyboard */,
 				BE7A3D5A1CD6B33A00D163FC /* Assets.xcassets */,
@@ -263,6 +275,8 @@
 				BE7A3D5E1CD6B33A00D163FC /* LaunchScreen.storyboard in Resources */,
 				BE7A3D831CD6B4B100D163FC /* notes in Resources */,
 				BE7A3D5B1CD6B33A00D163FC /* Assets.xcassets in Resources */,
+				BEC0B1991CE021DC0031EE8A /* loop_sound.wav in Resources */,
+				BEC0B1981CE021DC0031EE8A /* Assets.xcassets in Resources */,
 				BE7A3D591CD6B33A00D163FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +307,8 @@
 				BE7A3D841CD6B4B100D163FC /* Pet.swift in Sources */,
 				BE7A3D561CD6B33A00D163FC /* GameViewController.swift in Sources */,
 				8B70DAE91CD6B77700988E7E /* HealthKitManager.swift in Sources */,
+				BEC0B19A1CE021DC0031EE8A /* PetEnviroment.swift in Sources */,
+				BEC0B19B1CE021DC0031EE8A /* StatViewController.swift in Sources */,
 				BE7A3D501CD6B33A00D163FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
