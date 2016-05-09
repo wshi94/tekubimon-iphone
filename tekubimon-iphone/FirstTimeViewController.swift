@@ -17,9 +17,24 @@ class FirstTimeViewController: UIViewController {
         let dataController = DataStoreController.sharedInstance
         
         let moc = dataController.managedObjectContext
-        let entity = NSEntityDescription.insertNewObjectForEntityForName("Player", inManagedObjectContext: moc!) as! Player
+        let playerEntity = NSEntityDescription.insertNewObjectForEntityForName("Player", inManagedObjectContext: moc!) as! Player
         
-        entity.setValue("test", forKey: "name")
+         let petEntity = NSEntityDescription.insertNewObjectForEntityForName("Pet", inManagedObjectContext: moc!) as! Pet
+        petEntity.setValue("genius" , forKey: "name")
+        petEntity.setValue(playerEntity, forKey: "player")
+        petEntity.setValue(1, forKey: "attack")
+        petEntity.setValue(2, forKey: "defense")
+        petEntity.setValue(10, forKey: "health")
+        petEntity.setValue(1, forKey: "level")
+        petEntity.setValue("ace ventura", forKey: "name")
+        petEntity.setValue(10, forKey: "speed")
+//        @NSManaged var attack: NSNumber?
+//        @NSManaged var defense: NSNumber?
+//        @NSManaged var health: NSNumber?
+//        @NSManaged var level: NSNumber?
+//        @NSManaged var name: String?
+//        @NSManaged var speed: NSNumber?
+        playerEntity.setValue("test", forKey: "name")
         do {
             try moc!.save()
             let nextViewController = self.storyboard!.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController

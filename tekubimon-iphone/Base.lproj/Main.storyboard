@@ -378,10 +378,10 @@
             </objects>
             <point key="canvasLocation" x="-986.5" y="913.5"/>
         </scene>
-        <!--View Controller-->
+        <!--New Pet View Controller-->
         <scene sceneID="fsx-lb-nGP">
             <objects>
-                <viewController storyboardIdentifier="PetChoiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ezd-vd-wKg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PetChoiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ezd-vd-wKg" customClass="NewPetViewController" customModule="tekubimon_iphone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bwo-EB-DdH"/>
                         <viewControllerLayoutGuide type="bottom" id="MDV-Ij-Aqe"/>
@@ -389,6 +389,25 @@
                     <view key="view" contentMode="scaleToFill" id="bBJ-OE-PmN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a pet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYC-4f-cV1">
+                                <rect key="frame" x="136" y="64" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name your pet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K36-hO-5hl">
+                                <rect key="frame" x="131" y="405" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pet Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtT-F0-kzC">
+                                <rect key="frame" x="56" y="451" width="265" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -420,7 +439,7 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButton:" destination="hkh-DJ-XLk" eventType="touchUpInside" id="VCT-Eb-VkF"/>
-                                    <segue destination="ezd-vd-wKg" kind="presentation" id="cFY-5C-xcY"/>
+                                    <segue destination="ezd-vd-wKg" kind="presentation" id="Lho-M3-MBt"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIP-tZ-DMA">

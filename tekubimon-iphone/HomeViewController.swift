@@ -36,6 +36,10 @@ class HomeViewController: UIViewController {
                 }
                 else{
                     print(fetchedPlayer.first?.name)
+                    let petFetch = NSFetchRequest(entityName: "Pet")
+                    let fetchedPet = try context.executeFetchRequest(petFetch) as! [Pet]
+                    print("player is ")
+                    print(fetchedPet.first?.player?.name)
                 }
             } catch {
                 fatalError("Failed to fetch person: \(error)")
