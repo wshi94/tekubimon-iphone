@@ -11,7 +11,7 @@ import Foundation
 class Pet {
     var name: String
     var level: Int
-    var happiness: Int = 10
+    var happiness: Int = 50
     var attack: Int
     var defense: Int
     var health: Int
