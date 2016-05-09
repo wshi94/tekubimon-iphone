@@ -15,6 +15,9 @@
 		2AEC1AA71CDAA67D00699105 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC1AA61CDAA67D00699105 /* DataController.swift */; };
 		8B70DAE91CD6B77700988E7E /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B70DAE81CD6B77700988E7E /* HealthKitManager.swift */; };
 		8B70DAEB1CD6B78A00988E7E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B70DAEA1CD6B78A00988E7E /* HealthKit.framework */; };
+		BE0857101CE037CD00B4E31D /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08570F1CE037CD00B4E31D /* HomeTabViewController.swift */; };
+		BE0857121CE03CFD00B4E31D /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0857111CE03CFD00B4E31D /* PetViewController.swift */; };
+		BE0857141CE0F5CE00B4E31D /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0857131CE0F5CE00B4E31D /* StatViewController.swift */; };
 		BE7A3D501CD6B33A00D163FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D4F1CD6B33A00D163FC /* AppDelegate.swift */; };
 		BE7A3D521CD6B33A00D163FC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BE7A3D511CD6B33A00D163FC /* GameScene.sks */; };
 		BE7A3D541CD6B33A00D163FC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D531CD6B33A00D163FC /* GameScene.swift */; };
@@ -56,6 +59,9 @@
 		8B70DAE81CD6B77700988E7E /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		8B70DAEA1CD6B78A00988E7E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		8B70DAEC1CD6B78A00988E7E /* tekubimon-iphone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "tekubimon-iphone.entitlements"; sourceTree = "<group>"; };
+		BE08570F1CE037CD00B4E31D /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		BE0857111CE03CFD00B4E31D /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
+		BE0857131CE0F5CE00B4E31D /* StatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatViewController.swift; path = ../StatViewController.swift; sourceTree = "<group>"; };
 		BE7A3D4C1CD6B33A00D163FC /* tekubimon-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tekubimon-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7A3D4F1CD6B33A00D163FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7A3D511CD6B33A00D163FC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 		BE7A3D4E1CD6B33A00D163FC /* tekubimon-iphone */ = {
 			isa = PBXGroup;
 			children = (
+				BE0857131CE0F5CE00B4E31D /* StatViewController.swift */,
 				8B70DAEC1CD6B78A00988E7E /* tekubimon-iphone.entitlements */,
 				2A5DF9C21CDC263C00386A03 /* PlayerModel.xcdatamodeld */,
 				BE7A3D811CD6B4B100D163FC /* notes */,
@@ -140,11 +147,13 @@
 				2AEC1AA11CD74ACB00699105 /* HomeViewController.swift */,
 				2A5DFA0C1CDCD42E00386A03 /* FirstTimeViewController.swift */,
 				BE7A3D551CD6B33A00D163FC /* GameViewController.swift */,
+				BE0857111CE03CFD00B4E31D /* PetViewController.swift */,
 				BE7A3D571CD6B33A00D163FC /* Main.storyboard */,
 				BE7A3D5A1CD6B33A00D163FC /* Assets.xcassets */,
 				8B70DAE81CD6B77700988E7E /* HealthKitManager.swift */,
 				BE7A3D5C1CD6B33A00D163FC /* LaunchScreen.storyboard */,
 				BE7A3D5F1CD6B33A00D163FC /* Info.plist */,
+				BE08570F1CE037CD00B4E31D /* HomeTabViewController.swift */,
 			);
 			path = "tekubimon-iphone";
 			sourceTree = "<group>";
@@ -312,11 +321,14 @@
 				BE7A3D841CD6B4B100D163FC /* Pet.swift in Sources */,
 				2A5DF9C41CDC263C00386A03 /* PlayerModel.xcdatamodeld in Sources */,
 				2AEC1AA71CDAA67D00699105 /* DataController.swift in Sources */,
+				BE0857121CE03CFD00B4E31D /* PetViewController.swift in Sources */,
 				2AEC1AA21CD74ACB00699105 /* HomeViewController.swift in Sources */,
 				2A5DF9C71CDC283300386A03 /* Player+CoreDataProperties.swift in Sources */,
+				BE0857101CE037CD00B4E31D /* HomeTabViewController.swift in Sources */,
 				BE7A3D561CD6B33A00D163FC /* GameViewController.swift in Sources */,
 				8B70DAE91CD6B77700988E7E /* HealthKitManager.swift in Sources */,
 				2A5DFA0D1CDCD42E00386A03 /* FirstTimeViewController.swift in Sources */,
+				BE0857141CE0F5CE00B4E31D /* StatViewController.swift in Sources */,
 				BE7A3D501CD6B33A00D163FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

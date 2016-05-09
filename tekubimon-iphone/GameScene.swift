@@ -20,7 +20,7 @@ class GameScene: SKScene {
         
         //self.addChild(myLabel)
         
-        self.backgroundColor = SKColor.blackColor()
+        //self.backgroundColor = SKColor.blackColor()
         
     }
     
