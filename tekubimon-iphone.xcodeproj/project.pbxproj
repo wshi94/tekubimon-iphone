@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4223351CE107E60010F06C /* Pet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4223331CE107E60010F06C /* Pet+CoreDataProperties.swift */; };
+		2A4223361CE107E60010F06C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4223341CE107E60010F06C /* Pet.swift */; };
 		2A5DF9C41CDC263C00386A03 /* PlayerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DF9C21CDC263C00386A03 /* PlayerModel.xcdatamodeld */; };
 		2A5DF9C71CDC283300386A03 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DF9C51CDC283300386A03 /* Player+CoreDataProperties.swift */; };
 		2A5DF9C81CDC283300386A03 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DF9C61CDC283300386A03 /* Player.swift */; };
@@ -28,7 +30,6 @@
 		BE7A3D691CD6B33B00D163FC /* tekubimon_iphoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D681CD6B33B00D163FC /* tekubimon_iphoneTests.swift */; };
 		BE7A3D741CD6B33B00D163FC /* tekubimon_iphoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D731CD6B33B00D163FC /* tekubimon_iphoneUITests.swift */; };
 		BE7A3D831CD6B4B100D163FC /* notes in Resources */ = {isa = PBXBuildFile; fileRef = BE7A3D811CD6B4B100D163FC /* notes */; };
-		BE7A3D841CD6B4B100D163FC /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D821CD6B4B100D163FC /* Pet.swift */; };
 		BE7A3D861CD6E2B500D163FC /* Black_Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A4223331CE107E60010F06C /* Pet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2A4223341CE107E60010F06C /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		2A5DF9C31CDC263C00386A03 /* PlayerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayerModel.xcdatamodel; sourceTree = "<group>"; };
 		2A5DF9C51CDC283300386A03 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A5DF9C61CDC283300386A03 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -78,7 +81,6 @@
 		BE7A3D731CD6B33B00D163FC /* tekubimon_iphoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tekubimon_iphoneUITests.swift; sourceTree = "<group>"; };
 		BE7A3D751CD6B33B00D163FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7A3D811CD6B4B100D163FC /* notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
-		BE7A3D821CD6B4B100D163FC /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Black_Mage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +113,9 @@
 		BE7A3D431CD6B33A00D163FC = {
 			isa = PBXGroup;
 			children = (
+				2A4223331CE107E60010F06C /* Pet+CoreDataProperties.swift */,
 				2A5DF9C51CDC283300386A03 /* Player+CoreDataProperties.swift */,
+				2A4223341CE107E60010F06C /* Pet.swift */,
 				2A5DF9C61CDC283300386A03 /* Player.swift */,
 				8B70DAEA1CD6B78A00988E7E /* HealthKit.framework */,
 				BE7A3D4E1CD6B33A00D163FC /* tekubimon-iphone */,
@@ -138,13 +142,13 @@
 				8B70DAEC1CD6B78A00988E7E /* tekubimon-iphone.entitlements */,
 				2A5DF9C21CDC263C00386A03 /* PlayerModel.xcdatamodeld */,
 				BE7A3D811CD6B4B100D163FC /* notes */,
-				BE7A3D821CD6B4B100D163FC /* Pet.swift */,
 				2AEC1AA61CDAA67D00699105 /* DataController.swift */,
 				BE7A3D4F1CD6B33A00D163FC /* AppDelegate.swift */,
 				BE7A3D511CD6B33A00D163FC /* GameScene.sks */,
 				BE7A3D531CD6B33A00D163FC /* GameScene.swift */,
 				BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */,
 				2AEC1AA11CD74ACB00699105 /* HomeViewController.swift */,
+				BE08570F1CE037CD00B4E31D /* HomeTabViewController.swift */,
 				2A5DFA0C1CDCD42E00386A03 /* FirstTimeViewController.swift */,
 				BE7A3D551CD6B33A00D163FC /* GameViewController.swift */,
 				BE0857111CE03CFD00B4E31D /* PetViewController.swift */,
@@ -153,7 +157,6 @@
 				8B70DAE81CD6B77700988E7E /* HealthKitManager.swift */,
 				BE7A3D5C1CD6B33A00D163FC /* LaunchScreen.storyboard */,
 				BE7A3D5F1CD6B33A00D163FC /* Info.plist */,
-				BE08570F1CE037CD00B4E31D /* HomeTabViewController.swift */,
 			);
 			path = "tekubimon-iphone";
 			sourceTree = "<group>";
@@ -318,7 +321,6 @@
 				2A5DF9C81CDC283300386A03 /* Player.swift in Sources */,
 				BE7A3D541CD6B33A00D163FC /* GameScene.swift in Sources */,
 				BE7A3D861CD6E2B500D163FC /* Black_Mage.swift in Sources */,
-				BE7A3D841CD6B4B100D163FC /* Pet.swift in Sources */,
 				2A5DF9C41CDC263C00386A03 /* PlayerModel.xcdatamodeld in Sources */,
 				2AEC1AA71CDAA67D00699105 /* DataController.swift in Sources */,
 				BE0857121CE03CFD00B4E31D /* PetViewController.swift in Sources */,
@@ -326,9 +328,11 @@
 				2A5DF9C71CDC283300386A03 /* Player+CoreDataProperties.swift in Sources */,
 				BE0857101CE037CD00B4E31D /* HomeTabViewController.swift in Sources */,
 				BE7A3D561CD6B33A00D163FC /* GameViewController.swift in Sources */,
+				2A4223351CE107E60010F06C /* Pet+CoreDataProperties.swift in Sources */,
 				8B70DAE91CD6B77700988E7E /* HealthKitManager.swift in Sources */,
 				2A5DFA0D1CDCD42E00386A03 /* FirstTimeViewController.swift in Sources */,
 				BE0857141CE0F5CE00B4E31D /* StatViewController.swift in Sources */,
+				2A4223361CE107E60010F06C /* Pet.swift in Sources */,
 				BE7A3D501CD6B33A00D163FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

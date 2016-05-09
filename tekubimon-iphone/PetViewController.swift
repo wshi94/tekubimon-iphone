@@ -5,15 +5,25 @@
 //  Created by William Shi on 5/1/16.
 //  Copyright (c) 2016 William Shi. All rights reserved.
 //
-
+import Foundation
 import UIKit
 import SpriteKit
+import CoreData
 
 class PetViewController: UIViewController {
     
     var bmArray:[UIImage] = []
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var petname: UILabel!
+    @IBOutlet weak var atk: UILabel!
+    @IBOutlet weak var def: UILabel!
+    @IBOutlet weak var hit: UILabel!
+    @IBOutlet weak var spd: UILabel!
+    @IBOutlet weak var hpy: UILabel!
+    @IBOutlet weak var lvl: UILabel!
+    @IBOutlet weak var pnt: UILabel!
+    @IBOutlet weak var steps: UILabel!
     //@IBOutlet var mainView: SKView!
     
     /*let healthManager: HealthKitManager = HealthKitManager()
@@ -73,6 +83,45 @@ class PetViewController: UIViewController {
         animate()
         
         
+        //
+        let dataStoreController = DataStoreController.sharedInstance
+        dataStoreController.inContext { context in
+            guard let context = context else {
+                print("Unable to load context:", dataStoreController.error)
+                return
+            }
+            
+            
+            // Do stuff with context
+            let playerFetch = NSFetchRequest(entityName: "Player")
+            
+            do {
+                let fetchedPlayer = try context.executeFetchRequest(playerFetch) as! [Player]
+                if(fetchedPlayer.first == nil){
+                    print("NO PLAYER")
+                }
+                else{
+                    print(fetchedPlayer.first?.name)
+                    let petFetch = NSFetchRequest(entityName: "Pet")
+                    let fetchedPet = try context.executeFetchRequest(petFetch) as! [Pet]
+                    print("player is ")
+                    print(fetchedPet.first?.player?.name)
+                    self.petname.text = fetchedPet.first?.name
+                    self.atk.text = fetchedPet.first?.attack?.stringValue
+                    self.def.text = fetchedPet.first?.defense?.stringValue
+                    self.hit.text = fetchedPet.first?.health?.stringValue
+                    self.spd.text = fetchedPet.first?.speed?.stringValue
+                    self.hpy.text = fetchedPet.first?.health?.stringValue
+                    self.lvl.text = fetchedPet.first?.level?.stringValue
+           
+
+                }
+            } catch {
+                fatalError("Failed to fetch person: \(error)")
+            }
+            
+        }
+        //
     }
     
     override func shouldAutorotate() -> Bool {
