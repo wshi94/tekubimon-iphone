@@ -8,11 +8,17 @@
 
 import UIKit
 import SpriteKit
+import CoreData
 
 class StatViewController: UIViewController {
     
     var bmArray:[UIImage] = []
     
+    @IBOutlet weak var pnta: UILabel!
+    @IBOutlet weak var atk: UILabel!
+    @IBOutlet weak var def: UILabel!
+    @IBOutlet weak var hit: UILabel!
+    @IBOutlet weak var spd: UILabel!
 
     @IBOutlet weak var imageView: UIImageView!
 
@@ -34,6 +40,164 @@ class StatViewController: UIViewController {
      }
      }
      }*/
+    /*
+    @IBAction func atkUp(sender: AnyObject) {
+        let dataStoreController = DataStoreController.sharedInstance
+        dataStoreController.inContext { context in
+            guard let context = context else {
+                print("Unable to load context:", dataStoreController.error)
+                return
+            }
+            
+            
+            // Do stuff with context
+            let playerFetch = NSFetchRequest(entityName: "Player")
+            
+            do {
+                let fetchedPlayer = try context.executeFetchRequest(playerFetch) as! [Player]
+                if(fetchedPlayer.first == nil){
+                    print("NO PLAYER")
+                }
+                else{
+                    print(fetchedPlayer.first?.name)
+                    let petFetch = NSFetchRequest(entityName: "Pet")
+                    let fetchedPet = try context.executeFetchRequest(petFetch) as! [Pet]
+                    print("player is ")
+                    print(fetchedPet.first?.player?.name)
+                    let a = fetchedPet.first!.attack!.integerValue + 1
+                    fetchedPet.first!.attack?.setValue(a, forKey: "attack")
+                    self.atk.text = fetchedPet.first?.attack?.stringValue
+                    self.def.text = fetchedPet.first?.defense?.stringValue
+                    self.hit.text = fetchedPet.first?.health?.stringValue
+                    self.spd.text = fetchedPet.first?.speed?.stringValue
+                    
+                }
+            } catch {
+                fatalError("Failed to fetch person: \(error)")
+            }
+            
+        }
+
+    }
+    @IBAction func defUp(sender: AnyObject) {
+        let dataStoreController = DataStoreController.sharedInstance
+        dataStoreController.inContext { context in
+            guard let context = context else {
+                print("Unable to load context:", dataStoreController.error)
+                return
+            }
+            
+            
+            // Do stuff with context
+            let playerFetch = NSFetchRequest(entityName: "Player")
+            
+            do {
+                let fetchedPlayer = try context.executeFetchRequest(playerFetch) as! [Player]
+                if(fetchedPlayer.first == nil){
+                    print("NO PLAYER")
+                }
+                else{
+                    print(fetchedPlayer.first?.name)
+                    let petFetch = NSFetchRequest(entityName: "Pet")
+                    let fetchedPet = try context.executeFetchRequest(petFetch) as! [Pet]
+                    print("player is ")
+                    print(fetchedPet.first?.player?.name)
+                    let a = fetchedPet.first!.defense!.integerValue + 1
+                    fetchedPet.first!.defense?.setValue(a, forKey: "defense")
+                    self.atk.text = fetchedPet.first?.attack?.stringValue
+                    self.def.text = fetchedPet.first?.defense?.stringValue
+                    self.hit.text = fetchedPet.first?.health?.stringValue
+                    self.spd.text = fetchedPet.first?.speed?.stringValue
+                    
+                }
+            } catch {
+                fatalError("Failed to fetch person: \(error)")
+            }
+            
+        }
+
+    }
+    @IBAction func hitUp(sender: AnyObject) {
+        let dataStoreController = DataStoreController.sharedInstance
+        dataStoreController.inContext { context in
+            guard let context = context else {
+                print("Unable to load context:", dataStoreController.error)
+                return
+            }
+            
+            
+            // Do stuff with context
+            let playerFetch = NSFetchRequest(entityName: "Player")
+            
+            do {
+                let fetchedPlayer = try context.executeFetchRequest(playerFetch) as! [Player]
+                if(fetchedPlayer.first == nil){
+                    print("NO PLAYER")
+                }
+                else{
+                    print(fetchedPlayer.first?.name)
+                    let petFetch = NSFetchRequest(entityName: "Pet")
+                    let fetchedPet = try context.executeFetchRequest(petFetch) as! [Pet]
+                    print("player is ")
+                    print(fetchedPet.first?.player?.name)
+                    let a = fetchedPet.first!.health!.integerValue + 1
+                    fetchedPet.first!.health?.setValue(a, forKey: "health")
+                    self.atk.text = fetchedPet.first?.attack?.stringValue
+                    self.def.text = fetchedPet.first?.defense?.stringValue
+                    self.hit.text = fetchedPet.first?.health?.stringValue
+                    self.spd.text = fetchedPet.first?.speed?.stringValue
+                    
+                }
+            } catch {
+                fatalError("Failed to fetch person: \(error)")
+            }
+            
+        }
+
+    }
+    @IBAction func spdUp(sender: AnyObject) {
+        let dataStoreController = DataStoreController.sharedInstance
+        dataStoreController.inContext { context in
+            guard let context = context else {
+                print("Unable to load context:", dataStoreController.error)
+                return
+            }
+            
+            
+            // Do stuff with context
+            let playerFetch = NSFetchRequest(entityName: "Player")
+            
+            do {
+                let fetchedPlayer = try context.executeFetchRequest(playerFetch) as! [Player]
+                if(fetchedPlayer.first == nil){
+                    print("NO PLAYER")
+                }
+                else{
+                    print(fetchedPlayer.first?.name)
+                    let petFetch = NSFetchRequest(entityName: "Pet")
+                    let fetchedPet = try context.executeFetchRequest(petFetch) as! [Pet]
+                    print("player is ")
+                    print(fetchedPet.first?.player?.name)
+                    let a = fetchedPet.first!.speed!.integerValue + 1
+                    fetchedPet.first!.speed?.setValue(a, forKey: "speed")
+                    
+                    
+                    self.atk.text = fetchedPet.first?.attack?.stringValue
+                    self.def.text = fetchedPet.first?.defense?.stringValue
+                    self.hit.text = fetchedPet.first?.health?.stringValue
+                    self.spd.text = fetchedPet.first?.speed?.stringValue
+                    
+                    
+                    
+                }
+            } catch {
+                fatalError("Failed to fetch person: \(error)")
+            }
+            
+        }
+
+    }
+ */
     
     func animate(){
         for index in 0...1{
@@ -72,6 +236,40 @@ class StatViewController: UIViewController {
         //self.mainView.backgroundColor = [UIColor ]
         
         animate()
+        
+        let dataStoreController = DataStoreController.sharedInstance
+        dataStoreController.inContext { context in
+            guard let context = context else {
+                print("Unable to load context:", dataStoreController.error)
+                return
+            }
+            
+            
+            // Do stuff with context
+            let playerFetch = NSFetchRequest(entityName: "Player")
+            
+            do {
+                let fetchedPlayer = try context.executeFetchRequest(playerFetch) as! [Player]
+                if(fetchedPlayer.first == nil){
+                    print("NO PLAYER")
+                }
+                else{
+                    print(fetchedPlayer.first?.name)
+                    let petFetch = NSFetchRequest(entityName: "Pet")
+                    let fetchedPet = try context.executeFetchRequest(petFetch) as! [Pet]
+                    print("player is ")
+                    print(fetchedPet.first?.player?.name)
+                    self.atk.text = fetchedPet.first?.attack?.stringValue
+                    self.def.text = fetchedPet.first?.defense?.stringValue
+                    self.hit.text = fetchedPet.first?.health?.stringValue
+                    self.spd.text = fetchedPet.first?.speed?.stringValue
+                    
+                }
+            } catch {
+                fatalError("Failed to fetch person: \(error)")
+            }
+            
+        }
         
         
     }

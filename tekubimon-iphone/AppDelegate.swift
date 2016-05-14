@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -52,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         print(healthManager.steps)
         //hkm.authorizeHealthKit(<#T##completion: ((success: Bool, error: NSError!) -> Void)!##((success: Bool, error: NSError!) -> Void)!##(success: Bool, error: NSError!) -> Void#>)
+        
         
         return true
     }

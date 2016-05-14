@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y1U-xt-h5z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="y1U-xt-h5z">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -433,6 +433,9 @@
                                 <state key="normal" title="Attack Up">
                                     <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="atkUp:" destination="CsD-HB-DZQ" eventType="touchDown" id="YPA-qi-aX4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ATK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlv-Tl-eqa">
                                 <rect key="frame" x="309" y="384" width="31" height="21"/>
@@ -446,6 +449,9 @@
                                 <state key="normal" title="Defense Up">
                                     <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="defUp:" destination="CsD-HB-DZQ" eventType="touchDown" id="2QF-vg-3h4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DEF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bw-gC-kwG">
                                 <rect key="frame" x="308" y="425" width="32" height="21"/>
@@ -459,6 +465,9 @@
                                 <state key="normal" title="Health Up">
                                     <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="hitUp:" destination="CsD-HB-DZQ" eventType="touchDown" id="xog-qu-9eE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bC-XI-5yv">
                                 <rect key="frame" x="313" y="466" width="27" height="21"/>
@@ -472,6 +481,9 @@
                                 <state key="normal" title="Speed Up">
                                     <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="spdUp:" destination="CsD-HB-DZQ" eventType="touchDown" id="3S3-wD-YDa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SPD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryW-Kk-MOP">
                                 <rect key="frame" x="307" y="507" width="33" height="21"/>
@@ -499,9 +511,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stats" id="QTl-cc-p96"/>
+                    <tabBarItem key="tabBarItem" title="Stats" image="Stats_Bar_Image" id="QTl-cc-p96"/>
                     <connections>
+                        <outlet property="atk" destination="tlv-Tl-eqa" id="MJg-kb-np0"/>
+                        <outlet property="def" destination="6Bw-gC-kwG" id="YyA-OD-1IQ"/>
+                        <outlet property="hit" destination="6bC-XI-5yv" id="BnB-Ti-G5V"/>
                         <outlet property="imageView" destination="jb7-Cs-Jzl" id="3w3-CA-AEs"/>
+                        <outlet property="pnta" destination="GVa-Y9-taP" id="HAO-iL-RXV"/>
+                        <outlet property="spd" destination="ryW-Kk-MOP" id="tmP-ci-ijZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSc-ze-bS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -511,7 +528,7 @@
         <!--Settings-->
         <scene sceneID="2EU-5P-Y7T">
             <objects>
-                <viewController title="Settings" id="yb2-IE-Zjm" sceneMemberID="viewController">
+                <viewController title="Settings" id="yb2-IE-Zjm" customClass="SettingViewController" customModule="tekubimon_iphone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mtH-TJ-7lu"/>
                         <viewControllerLayoutGuide type="bottom" id="cxg-Nh-2Af"/>
@@ -519,9 +536,14 @@
                     <view key="view" contentMode="scaleToFill" id="2EP-et-oQY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipS-kX-ILF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="d1j-Wx-c4F"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings_Bar_Image" id="d1j-Wx-c4F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dg4-1p-FOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -634,7 +656,7 @@
         <!--Help-->
         <scene sceneID="YRk-99-Atk">
             <objects>
-                <viewController title="Help" id="CeH-JT-afU" sceneMemberID="viewController">
+                <viewController title="Help" id="CeH-JT-afU" customClass="HelpViewController" customModule="tekubimon_iphone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I43-bW-Big"/>
                         <viewControllerLayoutGuide type="bottom" id="xN3-Gl-IUa"/>
@@ -644,7 +666,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Help" id="nFz-13-qoe"/>
+                    <tabBarItem key="tabBarItem" title="Help" image="Help_Bar_Image" id="nFz-13-qoe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rq7-nQ-lwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -728,7 +750,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pet Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iML-yb-UUX">
-                                <rect key="frame" x="265" y="342" width="75" height="21"/>
+                                <rect key="frame" x="252" y="342" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -763,7 +785,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pet" id="qif-tL-k05"/>
+                    <tabBarItem key="tabBarItem" title="Pet" image="Pet_Bar_Image" selectedImage="Pet_Bar_Image" id="qif-tL-k05"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="atk" destination="FTm-Sy-Vaj" id="u2c-EX-v4g"/>
@@ -784,6 +806,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Help_Bar_Image" width="25" height="25"/>
+        <image name="Pet_Bar_Image" width="25" height="25"/>
+        <image name="Settings_Bar_Image" width="25" height="25"/>
+        <image name="Stats_Bar_Image" width="25" height="25"/>
         <image name="black_mage_0" width="24" height="32"/>
         <image name="black_mage_1" width="24" height="32"/>
     </resources>

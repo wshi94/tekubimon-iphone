@@ -26,7 +26,7 @@ class FirstTimeViewController: UIViewController {
         petEntity.setValue(2, forKey: "defense")
         petEntity.setValue(10, forKey: "health")
         petEntity.setValue(1, forKey: "level")
-        petEntity.setValue("ace ventura", forKey: "name")
+        petEntity.setValue("Black Mage", forKey: "name")
         petEntity.setValue(10, forKey: "speed")
         playerEntity.setValue(playerNameText.text, forKey: "name")
         do {
