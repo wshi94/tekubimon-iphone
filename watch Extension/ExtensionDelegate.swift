@@ -14,11 +14,11 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
         
-        if (WCSession.isSupported()) {
+        /*if (WCSession.isSupported()) {
             let session = WCSession.defaultSession()
             session.delegate = self
             session.activateSession()
-        }
+        }*/
     }
 
     func applicationDidBecomeActive() {
