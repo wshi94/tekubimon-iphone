@@ -13,14 +13,25 @@
 		2A5DF9C71CDC283300386A03 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DF9C51CDC283300386A03 /* Player+CoreDataProperties.swift */; };
 		2A5DF9C81CDC283300386A03 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DF9C61CDC283300386A03 /* Player.swift */; };
 		2A5DFA0D1CDCD42E00386A03 /* FirstTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5DFA0C1CDCD42E00386A03 /* FirstTimeViewController.swift */; };
-		2AEC1AA21CD74ACB00699105 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC1AA11CD74ACB00699105 /* HomeViewController.swift */; };
+		2A5EB9171CE8113E00EF7560 /* PetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EB9161CE8113E00EF7560 /* PetInfo.swift */; };
+		2A5EB9191CE8114400EF7560 /* BossInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5EB9181CE8114400EF7560 /* BossInfo.swift */; };
+		2A5EB91B1CE8116E00EF7560 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A5EB91A1CE8116E00EF7560 /* GameScene.sks */; };
 		2AEC1AA71CDAA67D00699105 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC1AA61CDAA67D00699105 /* DataController.swift */; };
+		2AF0855C1CE8101200B5E4AF /* bossbalrog.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF085521CE8101200B5E4AF /* bossbalrog.atlas */; };
+		2AF0855D1CE8101200B5E4AF /* bossdragon.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF085531CE8101200B5E4AF /* bossdragon.atlas */; };
+		2AF0855E1CE8101200B5E4AF /* bossmushroom.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF085541CE8101200B5E4AF /* bossmushroom.atlas */; };
+		2AF0855F1CE8101200B5E4AF /* bossskeleton.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF085551CE8101200B5E4AF /* bossskeleton.atlas */; };
+		2AF085601CE8101200B5E4AF /* bossstump.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF085561CE8101200B5E4AF /* bossstump.atlas */; };
+		2AF085611CE8101200B5E4AF /* bosstree.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF085571CE8101200B5E4AF /* bosstree.atlas */; };
+		2AF085621CE8101200B5E4AF /* petdragon.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF085581CE8101200B5E4AF /* petdragon.atlas */; };
+		2AF085631CE8101200B5E4AF /* petlion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF085591CE8101200B5E4AF /* petlion.atlas */; };
+		2AF085641CE8101200B5E4AF /* petporcupine.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF0855A1CE8101200B5E4AF /* petporcupine.atlas */; };
+		2AF085651CE8101200B5E4AF /* yeti.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2AF0855B1CE8101200B5E4AF /* yeti.atlas */; };
 		8B70DAE91CD6B77700988E7E /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B70DAE81CD6B77700988E7E /* HealthKitManager.swift */; };
 		8B70DAEB1CD6B78A00988E7E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B70DAEA1CD6B78A00988E7E /* HealthKit.framework */; };
 		BE0857101CE037CD00B4E31D /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE08570F1CE037CD00B4E31D /* HomeTabViewController.swift */; };
 		BE0857121CE03CFD00B4E31D /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0857111CE03CFD00B4E31D /* PetViewController.swift */; };
 		BE0857141CE0F5CE00B4E31D /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0857131CE0F5CE00B4E31D /* StatViewController.swift */; };
-		BE0857181CE11C9200B4E31D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0857171CE11C9200B4E31D /* SettingViewController.swift */; };
 		BE08571A1CE11C9C00B4E31D /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0857191CE11C9C00B4E31D /* HelpViewController.swift */; };
 		BE1B4C951CE6C6510032B904 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1B4C931CE6C6510032B904 /* Interface.storyboard */; };
 		BE1B4C971CE6C6510032B904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1B4C961CE6C6510032B904 /* Assets.xcassets */; };
@@ -31,7 +42,7 @@
 		BE1B4CAB1CE6C6510032B904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1B4CAA1CE6C6510032B904 /* Assets.xcassets */; };
 		BE1B4CAF1CE6C6510032B904 /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BE1B4C911CE6C6500032B904 /* watch.app */; };
 		BE7A3D501CD6B33A00D163FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D4F1CD6B33A00D163FC /* AppDelegate.swift */; };
-		BE7A3D521CD6B33A00D163FC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BE7A3D511CD6B33A00D163FC /* GameScene.sks */; };
+		BE7A3D521CD6B33A00D163FC /* GameScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = BE7A3D511CD6B33A00D163FC /* GameScene2.sks */; };
 		BE7A3D541CD6B33A00D163FC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D531CD6B33A00D163FC /* GameScene.swift */; };
 		BE7A3D561CD6B33A00D163FC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A3D551CD6B33A00D163FC /* GameViewController.swift */; };
 		BE7A3D591CD6B33A00D163FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7A3D571CD6B33A00D163FC /* Main.storyboard */; };
@@ -106,15 +117,26 @@
 		2A5DF9C51CDC283300386A03 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A5DF9C61CDC283300386A03 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		2A5DFA0C1CDCD42E00386A03 /* FirstTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTimeViewController.swift; sourceTree = "<group>"; };
-		2AEC1AA11CD74ACB00699105 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2A5EB9161CE8113E00EF7560 /* PetInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetInfo.swift; sourceTree = "<group>"; };
+		2A5EB9181CE8114400EF7560 /* BossInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BossInfo.swift; sourceTree = "<group>"; };
+		2A5EB91A1CE8116E00EF7560 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		2AEC1AA61CDAA67D00699105 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2AF085521CE8101200B5E4AF /* bossbalrog.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bossbalrog.atlas; sourceTree = "<group>"; };
+		2AF085531CE8101200B5E4AF /* bossdragon.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bossdragon.atlas; sourceTree = "<group>"; };
+		2AF085541CE8101200B5E4AF /* bossmushroom.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bossmushroom.atlas; sourceTree = "<group>"; };
+		2AF085551CE8101200B5E4AF /* bossskeleton.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bossskeleton.atlas; sourceTree = "<group>"; };
+		2AF085561CE8101200B5E4AF /* bossstump.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bossstump.atlas; sourceTree = "<group>"; };
+		2AF085571CE8101200B5E4AF /* bosstree.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bosstree.atlas; sourceTree = "<group>"; };
+		2AF085581CE8101200B5E4AF /* petdragon.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petdragon.atlas; sourceTree = "<group>"; };
+		2AF085591CE8101200B5E4AF /* petlion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petlion.atlas; sourceTree = "<group>"; };
+		2AF0855A1CE8101200B5E4AF /* petporcupine.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = petporcupine.atlas; sourceTree = "<group>"; };
+		2AF0855B1CE8101200B5E4AF /* yeti.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = yeti.atlas; sourceTree = "<group>"; };
 		8B70DAE81CD6B77700988E7E /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		8B70DAEA1CD6B78A00988E7E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		8B70DAEC1CD6B78A00988E7E /* tekubimon-iphone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "tekubimon-iphone.entitlements"; sourceTree = "<group>"; };
 		BE08570F1CE037CD00B4E31D /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		BE0857111CE03CFD00B4E31D /* PetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 		BE0857131CE0F5CE00B4E31D /* StatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatViewController.swift; path = ../StatViewController.swift; sourceTree = "<group>"; };
-		BE0857171CE11C9200B4E31D /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BE0857191CE11C9C00B4E31D /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		BE1B4C911CE6C6500032B904 /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1B4C941CE6C6510032B904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -129,7 +151,7 @@
 		BE1B4CAC1CE6C6510032B904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE7A3D4C1CD6B33A00D163FC /* tekubimon-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tekubimon-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7A3D4F1CD6B33A00D163FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE7A3D511CD6B33A00D163FC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		BE7A3D511CD6B33A00D163FC /* GameScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene2.sks; sourceTree = "<group>"; };
 		BE7A3D531CD6B33A00D163FC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		BE7A3D551CD6B33A00D163FC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BE7A3D581CD6B33A00D163FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -242,22 +264,33 @@
 		BE7A3D4E1CD6B33A00D163FC /* tekubimon-iphone */ = {
 			isa = PBXGroup;
 			children = (
+				2AF085521CE8101200B5E4AF /* bossbalrog.atlas */,
+				2AF085531CE8101200B5E4AF /* bossdragon.atlas */,
+				2AF085541CE8101200B5E4AF /* bossmushroom.atlas */,
+				2AF085551CE8101200B5E4AF /* bossskeleton.atlas */,
+				2AF085561CE8101200B5E4AF /* bossstump.atlas */,
+				2AF085571CE8101200B5E4AF /* bosstree.atlas */,
+				2AF085581CE8101200B5E4AF /* petdragon.atlas */,
+				2AF085591CE8101200B5E4AF /* petlion.atlas */,
+				2AF0855A1CE8101200B5E4AF /* petporcupine.atlas */,
+				2AF0855B1CE8101200B5E4AF /* yeti.atlas */,
 				BE0857131CE0F5CE00B4E31D /* StatViewController.swift */,
 				8B70DAEC1CD6B78A00988E7E /* tekubimon-iphone.entitlements */,
 				2A5DF9C21CDC263C00386A03 /* PlayerModel.xcdatamodeld */,
 				BE7A3D811CD6B4B100D163FC /* notes */,
 				2AEC1AA61CDAA67D00699105 /* DataController.swift */,
 				BE7A3D4F1CD6B33A00D163FC /* AppDelegate.swift */,
-				BE7A3D511CD6B33A00D163FC /* GameScene.sks */,
+				BE7A3D511CD6B33A00D163FC /* GameScene2.sks */,
+				2A5EB91A1CE8116E00EF7560 /* GameScene.sks */,
 				BE7A3D531CD6B33A00D163FC /* GameScene.swift */,
 				BE7A3D851CD6E2B500D163FC /* Black_Mage.swift */,
-				2AEC1AA11CD74ACB00699105 /* HomeViewController.swift */,
 				BE08570F1CE037CD00B4E31D /* HomeTabViewController.swift */,
 				2A5DFA0C1CDCD42E00386A03 /* FirstTimeViewController.swift */,
 				BE7A3D551CD6B33A00D163FC /* GameViewController.swift */,
 				BE0857111CE03CFD00B4E31D /* PetViewController.swift */,
+				2A5EB9181CE8114400EF7560 /* BossInfo.swift */,
+				2A5EB9161CE8113E00EF7560 /* PetInfo.swift */,
 				BE7A3D571CD6B33A00D163FC /* Main.storyboard */,
-				BE0857171CE11C9200B4E31D /* SettingViewController.swift */,
 				BE0857191CE11C9C00B4E31D /* HelpViewController.swift */,
 				BE7A3D5A1CD6B33A00D163FC /* Assets.xcassets */,
 				8B70DAE81CD6B77700988E7E /* HealthKitManager.swift */,
@@ -458,11 +491,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE7A3D521CD6B33A00D163FC /* GameScene.sks in Resources */,
+				BE7A3D521CD6B33A00D163FC /* GameScene2.sks in Resources */,
+				2AF085641CE8101200B5E4AF /* petporcupine.atlas in Resources */,
+				2AF0855F1CE8101200B5E4AF /* bossskeleton.atlas in Resources */,
+				2AF085621CE8101200B5E4AF /* petdragon.atlas in Resources */,
+				2A5EB91B1CE8116E00EF7560 /* GameScene.sks in Resources */,
+				2AF0855C1CE8101200B5E4AF /* bossbalrog.atlas in Resources */,
 				BE7A3D5E1CD6B33A00D163FC /* LaunchScreen.storyboard in Resources */,
 				BE7A3D831CD6B4B100D163FC /* notes in Resources */,
+				2AF085651CE8101200B5E4AF /* yeti.atlas in Resources */,
 				BE7A3D5B1CD6B33A00D163FC /* Assets.xcassets in Resources */,
+				2AF085631CE8101200B5E4AF /* petlion.atlas in Resources */,
+				2AF085611CE8101200B5E4AF /* bosstree.atlas in Resources */,
 				BE7A3D591CD6B33A00D163FC /* Main.storyboard in Resources */,
+				2AF0855E1CE8101200B5E4AF /* bossmushroom.atlas in Resources */,
+				2AF085601CE8101200B5E4AF /* bossstump.atlas in Resources */,
+				2AF0855D1CE8101200B5E4AF /* bossdragon.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,14 +541,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5EB9191CE8114400EF7560 /* BossInfo.swift in Sources */,
 				2A5DF9C81CDC283300386A03 /* Player.swift in Sources */,
 				BE7A3D541CD6B33A00D163FC /* GameScene.swift in Sources */,
 				BE7A3D861CD6E2B500D163FC /* Black_Mage.swift in Sources */,
 				2A5DF9C41CDC263C00386A03 /* PlayerModel.xcdatamodeld in Sources */,
+				2A5EB9171CE8113E00EF7560 /* PetInfo.swift in Sources */,
 				2AEC1AA71CDAA67D00699105 /* DataController.swift in Sources */,
-				BE0857181CE11C9200B4E31D /* SettingViewController.swift in Sources */,
 				BE0857121CE03CFD00B4E31D /* PetViewController.swift in Sources */,
-				2AEC1AA21CD74ACB00699105 /* HomeViewController.swift in Sources */,
 				2A5DF9C71CDC283300386A03 /* Player+CoreDataProperties.swift in Sources */,
 				BE0857101CE037CD00B4E31D /* HomeTabViewController.swift in Sources */,
 				BE7A3D561CD6B33A00D163FC /* GameViewController.swift in Sources */,
@@ -824,6 +868,7 @@
 				BE1B4CB31CE6C6510032B904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE1B4CB61CE6C6510032B904 /* Build configuration list for PBXNativeTarget "watch" */ = {
 			isa = XCConfigurationList;
@@ -832,6 +877,7 @@
 				BE1B4CB11CE6C6510032B904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE7A3D471CD6B33A00D163FC /* Build configuration list for PBXProject "tekubimon-iphone" */ = {
 			isa = XCConfigurationList;
